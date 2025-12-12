@@ -3,17 +3,11 @@ Sales & Revenue Performance Analysis
 This project focuses on analyzing sales, revenue, product performance, customer behavior, and marketing ROI for an eCommerce business using SQL, Python, and Power BI.
 
 Project Structure
-
 data/
-
 sql/
-
 notebooks/
-
 powerbi/
-
 outputs/
-
 documentation/
 
 Tools Used
@@ -28,42 +22,37 @@ Power BI
 
 Dataset Information
 
-The dataset contains multiple tables covering:
+The dataset contains multiple tables such as:
 
-Customers – demographics, segments, signup dates
+Customers – demographics and segments
 
-Orders – order dates, amounts, payment methods
+Orders – order details, revenue, payment method
 
 Order Items – product-level sales
 
-Products – price, cost, category, stock
+Products – pricing, cost, category
 
 Categories – list of product categories
 
-Payments – payment method and payment status
+Payments – transaction and payment info
 
-Inventory Log – stock changes (sale, return, restock)
+Inventory Log – stock movement (sale, return, restock)
 
-Marketing Campaigns – marketing spend and revenue
+Marketing Campaigns – spend and revenue
 
-Reviews – customer product ratings and feedback
+Reviews – product ratings and feedback
 
-Power BI Dashboard (3 Pages)
+Power BI Dashboard
 
-A complete Power BI dashboard has been created for this project.
-It includes 3 pages:
+A complete 3-page Power BI dashboard is included.
 
 1. Home Page
 
-Introduction about the project
+Simple introduction to the project
 
-Navigation buttons to other pages
-
-Quick overview of data and analysis
+Navigation to other dashboard pages
 
 2. Sales & Revenue Overview
-
-This page highlights overall business performance.
 
 Key KPIs:
 
@@ -79,92 +68,89 @@ Average Order Value (AOV): 3,950
 
 Visuals included:
 
-Revenue trend by Year and Month
+Revenue trend by year and month
 
 Top 10 products by revenue
 
 Orders by payment method
 
-Top performing country
+Top country by revenue
 
-Best selling product
+Top product
 
-Average product rating
+Average rating
 
 3. Marketing & Customer Insights
 
-This page focuses on understanding customers and marketing effectiveness.
+Marketing:
 
-Marketing Insights:
+ROI by channel
 
-ROI for each marketing channel
+Spend vs revenue
 
-Total spend vs total revenue
+Best and worst performing channels
 
-Top converting channels
+Email marketing gives highest ROI
 
-Email marketing shows the highest ROI
+Social media shows lowest ROI
 
-Social media has the lowest ROI
+Customer:
 
-Customer Insights:
+Customer segments (Regular, New, Premium, VIP)
 
-Customer segment distribution (Regular, New, Premium, VIP)
+Repeat vs new buyers
 
-Repeat customer behavior
+Ratings impact
 
-Purchase patterns
-
-Average ratings by customers
-
-Country-wise and category-wise trends
+Sales by region/category
 
 Jupyter Notebook (EDA)
 
-The notebook includes:
+Includes:
 
-Loading and cleaning data
-
-Converting date formats
+Data cleaning
 
 Summary statistics
 
-Visualizations for revenue, customers, products
+SQL queries
 
-SQL queries using SQLAlchemy
+Monthly revenue trend
 
-Cumulative revenue
+Category performance
 
-Rolling averages
+Product analysis
 
-Inventory movement analysis
+Payment insights
+
+Inventory movement
 
 PDF Report
 
-A detailed report is available inside the documentation folder.
-It contains summarized insights, charts, and final recommendations.
+A full report is available in the documentation/ folder.
 
-Key Findings (Summary)
+Key Insights
 
-Revenue: 5.92M+ total revenue
+Total revenue: 5.92M+
 
-AOV: Around 3,950
+AOV around 3,950
 
-Top categories: Electronics and Clothing
+Electronics & Clothing are strongest categories
 
-Top product: Western Harum Elite
+Western Harum Elite is the top product
 
-Customer majority: Regular customers form the highest segment
+Regular customers form the largest segment
 
-Marketing: Email has the highest ROI, social media the lowest
+Email marketing has the best ROI
 
-Ratings: Average rating is around 2.99
+Social media marketing needs improvement
+
+Average product rating is 2.99
 
 Future Improvements
 
-Add sales forecasting
+Add forecasting
 
-Build CLV (Customer Lifetime Value) model
+Build customer lifetime value model
 
 Create a Streamlit dashboard
 
