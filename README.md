@@ -1,157 +1,134 @@
-Sales & Revenue Performance Analysis
+# Sales & Revenue Performance Analysis
 
-This project focuses on analyzing sales, revenue, product performance, customer behavior, and marketing ROI for an eCommerce business using SQL, Python, and Power BI.
+This project focuses on analyzing sales, revenue trends, customer behavior, product performance, and marketing ROI for an eCommerce business using SQL, Python, and Power BI.
 
-Project Structure
-data/
-sql/
-notebooks/
-powerbi/
-outputs/
-documentation/
+---
 
-Tools Used
+## Project Structure
 
-Python (Pandas, Matplotlib)
+data/  
+sql/  
+notebooks/  
+powerbi/  
+outputs/  
+documentation/  
 
-MySQL
+---
 
-Jupyter Notebook
+## Tools Used
 
-Power BI
+- Python (Pandas, Matplotlib)
+- MySQL
+- Jupyter Notebook
+- Power BI
 
-Dataset Information
+---
 
-The dataset contains multiple tables such as:
+## Dataset Information
 
-Customers – demographics and segments
+The dataset includes the following tables:
 
-Orders – order details, revenue, payment method
+- **Customers** – user demographics and segments  
+- **Orders** – order-level revenue and payment details  
+- **Order Items** – item-wise sales data  
+- **Products** – products, pricing, cost, and category  
+- **Categories** – category information  
+- **Payments** – payment transactions and method  
+- **Inventory Log** – stock movement (sale, return, restock)  
+- **Marketing Campaigns** – spend and revenue from campaigns  
+- **Reviews** – customer ratings and feedback  
 
-Order Items – product-level sales
+---
 
-Products – pricing, cost, category
+# Power BI Dashboard
 
-Categories – list of product categories
+A fully interactive Power BI dashboard was created with 3 pages.
 
-Payments – transaction and payment info
+---
 
-Inventory Log – stock movement (sale, return, restock)
+## 1. Home Page
 
-Marketing Campaigns – spend and revenue
+- Introduction to the project  
+- Navigation buttons to other pages  
+- Quick overview KPIs  
 
-Reviews – product ratings and feedback
+---
 
-Power BI Dashboard
+## 2. Sales & Revenue Overview
 
-A complete 3-page Power BI dashboard is included.
+**Key KPIs:**
+- Total Revenue: 5.92M  
+- Total Customers: 1000  
+- Total Orders: 1500  
+- Total Products: 500  
+- Average Order Value (AOV): 3,950  
 
-1. Home Page
+**Visuals Included:**
+- Monthly and yearly revenue trend  
+- Top 10 products by revenue  
+- Orders by payment method  
+- Top-performing country  
+- Best-selling product  
+- Average product rating  
 
-Simple introduction to the project
+---
 
-Navigation to other dashboard pages
+## 3. Marketing & Customer Insights
 
-2. Sales & Revenue Overview
+**Marketing Insights:**
+- ROI for each marketing channel  
+- Spend vs Revenue for campaigns  
+- Best performing channels  
+- Email marketing performs the best  
+- Social media ROI is the lowest  
 
-Key KPIs:
+**Customer Insights:**
+- Customer segmentation: Regular, New, Premium, VIP  
+- Repeat vs New customer performance  
+- Country-wise and category-wise performance  
+- Rating and review-based insights  
 
-Total Revenue: 5.92M
+---
 
-Total Customers: 1000
+# Jupyter Notebook (EDA)
 
-Total Orders: 1500
+The notebook includes:
 
-Total Products: 500
+- Loading and cleaning the dataset  
+- Handling missing values  
+- Datetime conversions  
+- Summary statistics  
+- SQL queries with SQLAlchemy  
+- Monthly revenue trend  
+- Category and product analysis  
+- Payment analysis  
+- Inventory movement patterns  
 
-Average Order Value (AOV): 3,950
+---
 
-Visuals included:
+# PDF Report
 
-Revenue trend by year and month
+A detailed report is included in the `documentation/` folder with all insights and charts.
 
-Top 10 products by revenue
+---
 
-Orders by payment method
+# Key Insights
 
-Top country by revenue
+- Total revenue is above **5.92M**  
+- AOV is around **3,950**  
+- Electronics and Clothing are the most profitable categories  
+- Western Harum Elite is the top-selling product  
+- Regular customers form the majority group  
+- Email delivers the highest ROI  
+- Social media campaigns underperform  
+- Average product rating is **2.99**  
 
-Top product
+---
 
-Average rating
+# Future Improvements
 
-3. Marketing & Customer Insights
+- Add sales forecasting  
+- Build customer lifetime value (CLV) model  
+- Create Streamlit-based dashboard  
+- Automate refresh flow for Power BI  
 
-Marketing:
-
-ROI by channel
-
-Spend vs revenue
-
-Best and worst performing channels
-
-Email marketing gives highest ROI
-
-Social media shows lowest ROI
-
-Customer:
-
-Customer segments (Regular, New, Premium, VIP)
-
-Repeat vs new buyers
-
-Ratings impact
-
-Sales by region/category
-
-Jupyter Notebook (EDA)
-
-Includes:
-
-Data cleaning
-
-Summary statistics
-
-SQL queries
-
-Monthly revenue trend
-
-Category performance
-
-Product analysis
-
-Payment insights
-
-Inventory movement
-
-PDF Report
-
-A full report is available in the documentation/ folder.
-
-Key Insights
-
-Total revenue: 5.92M+
-
-AOV around 3,950
-
-Electronics & Clothing are strongest categories
-
-Western Harum Elite is the top product
-
-Regular customers form the largest segment
-
-Email marketing has the best ROI
-
-Social media marketing needs improvement
-
-Average product rating is 2.99
-
-Future Improvements
-
-Add forecasting
-
-Build customer lifetime value model
-
-Create a Streamlit dashboard
-
-Automate ETL for Power BI
