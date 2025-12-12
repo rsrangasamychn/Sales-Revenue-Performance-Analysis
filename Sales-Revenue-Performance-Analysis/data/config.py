@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, event
 
-load_dotenv(dotenv_path = "C:/Users/hanav/Data Analysis/.env")
+load_dotenv(dotenv_path = "C:/Users/myDevice/Data Analysis/.env")
 
 user = os.getenv("DB_USER")
 password = os.getenv("DB_PASS")
